@@ -13,7 +13,7 @@ import ObjectiveC
 
 private var ActionBlockKey: UInt8 = 0
 
-typealias ButtonActionBlockType = (sender: UIButton) -> Void
+public typealias ButtonActionBlockType = (sender: UIButton) -> Void
 
 private class ActionBlockWrapper : NSObject {
     var block : ButtonActionBlockType
