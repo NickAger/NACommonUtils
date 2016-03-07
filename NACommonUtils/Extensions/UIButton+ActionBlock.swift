@@ -23,7 +23,7 @@ private class ActionBlockWrapper : NSObject {
 }
 
 extension UIButton {
-    func onPressed(block: ButtonActionBlockType) {
+    public func onPressed(block: ButtonActionBlockType) {
         objc_setAssociatedObject(self, &ActionBlockKey, ActionBlockWrapper(block: block), objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC) // note we don't use OBJC_ASSOCIATION_COPY_NONATOMIC as we're storing the ActionBlockWrapper object not the onPressAction dispatch_block_t. ActionBlockWrapper will copy the onPressAction block correctly.
         addTarget(self, action: "extensionHandleBlockAction:", forControlEvents: .TouchUpInside)
     }
