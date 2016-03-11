@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		848ED4221C8DD42D00EC5B59 /* NACommonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 848ED4211C8DD42D00EC5B59 /* NACommonUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		848ED4291C8DD42D00EC5B59 /* NACommonUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848ED41E1C8DD42D00EC5B59 /* NACommonUtils.framework */; };
-		848ED42E1C8DD42D00EC5B59 /* NACommonUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED42D1C8DD42D00EC5B59 /* NACommonUtilsTests.swift */; };
+		848ED42E1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED42D1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift */; };
 		848ED4431C8DDD3800EC5B59 /* Array+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED43D1C8DDD3800EC5B59 /* Array+Functional.swift */; };
 		848ED4441C8DDD3800EC5B59 /* NSMutableAttributedString+Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED43E1C8DDD3800EC5B59 /* NSMutableAttributedString+Creation.swift */; };
 		848ED4451C8DDD3800EC5B59 /* String+LineUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED43F1C8DDD3800EC5B59 /* String+LineUtils.swift */; };
@@ -19,6 +19,8 @@
 		848ED44D1C8DDD4000EC5B59 /* ActivityOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED44A1C8DDD4000EC5B59 /* ActivityOverlay.swift */; };
 		848ED44E1C8DDD4000EC5B59 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED44B1C8DDD4000EC5B59 /* AnyError.swift */; };
 		848ED44F1C8DDD4000EC5B59 /* OnePixelConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED44C1C8DDD4000EC5B59 /* OnePixelConstraint.swift */; };
+		848ED5801C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */; };
+		848ED5841C9331EE00EC5B59 /* StringLineUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 		848ED4211C8DD42D00EC5B59 /* NACommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NACommonUtils.h; sourceTree = "<group>"; };
 		848ED4231C8DD42D00EC5B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848ED4281C8DD42D00EC5B59 /* NACommonUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NACommonUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		848ED42D1C8DD42D00EC5B59 /* NACommonUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NACommonUtilsTests.swift; sourceTree = "<group>"; };
+		848ED42D1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayFunctionalsTests.swift; sourceTree = "<group>"; };
 		848ED42F1C8DD42D00EC5B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848ED43D1C8DDD3800EC5B59 /* Array+Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Functional.swift"; sourceTree = "<group>"; };
 		848ED43E1C8DDD3800EC5B59 /* NSMutableAttributedString+Creation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Creation.swift"; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		848ED44A1C8DDD4000EC5B59 /* ActivityOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityOverlay.swift; sourceTree = "<group>"; };
 		848ED44B1C8DDD4000EC5B59 /* AnyError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
 		848ED44C1C8DDD4000EC5B59 /* OnePixelConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePixelConstraint.swift; sourceTree = "<group>"; };
+		848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringCreationTests.swift; sourceTree = "<group>"; };
+		848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLineUtilsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,10 @@
 		848ED42C1C8DD42D00EC5B59 /* NACommonUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
-				848ED42D1C8DD42D00EC5B59 /* NACommonUtilsTests.swift */,
+				848ED42D1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift */,
 				848ED42F1C8DD42D00EC5B59 /* Info.plist */,
+				848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */,
+				848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */,
 			);
 			path = NACommonUtilsTests;
 			sourceTree = "<group>";
@@ -253,7 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848ED42E1C8DD42D00EC5B59 /* NACommonUtilsTests.swift in Sources */,
+				848ED5841C9331EE00EC5B59 /* StringLineUtilsTests.swift in Sources */,
+				848ED42E1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift in Sources */,
+				848ED5801C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +436,7 @@
 				848ED4341C8DD42D00EC5B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		848ED4351C8DD42D00EC5B59 /* Build configuration list for PBXNativeTarget "NACommonUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +445,7 @@
 				848ED4371C8DD42D00EC5B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,6 +17,10 @@ extension String {
     
     // ignores leading whitespace
     public func startsWithNewLine() -> Bool {
+        if self.isEmpty {
+            return false
+        }
+        
         let trimmedString = stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         let components = trimmedString.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
         guard let firstString = components.first else {
@@ -27,6 +31,10 @@ extension String {
     
     // ignores trailing whitespace
     public func endsWithNewLine() -> Bool {
+        if self.isEmpty {
+            return false
+        }
+        
         let trimmedString = stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         let components = trimmedString.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
         guard let lastString = components.last else {
