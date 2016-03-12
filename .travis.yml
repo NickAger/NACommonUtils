@@ -46,8 +46,8 @@
 #     Resizable iPhone (90F9F633-C4A2-499C-82C0-0E2CD82A1829) (Shutdown)
 #     Resizable iPad (115F4F5D-C861-4342-A274-D8438126F158) (Shutdown)
 
+language: objective-c
 osx_image: xcode7.2
-language: swift
 cache: cocoapods
 #podfile: Example/Podfile
 
