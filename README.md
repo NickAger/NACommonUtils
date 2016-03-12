@@ -1,7 +1,7 @@
 # NACommonUtils
 
 
-[![CI Status](http://img.shields.io/travis/Nick Ager/NACommonUtils.svg?style=flat)](https://travis-ci.org/Nick Ager/NACommonUtils)
+[![CI Status](http://img.shields.io/travis/NickAger/NACommonUtils.svg?style=flat)](https://travis-ci.org/Nick Ager/NACommonUtils)
 [![Version](https://img.shields.io/cocoapods/v/NACommonUtils.svg?style=flat)](http://cocoapods.org/pods/NACommonUtils)
 [![License](https://img.shields.io/cocoapods/l/NACommonUtils.svg?style=flat)](http://cocoapods.org/pods/NACommonUtils)
 [![Platform](https://img.shields.io/cocoapods/p/NACommonUtils.svg?style=flat)](http://cocoapods.org/pods/NACommonUtils)

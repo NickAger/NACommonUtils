@@ -2,52 +2,8 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-# As of 12th March - Travis reported:
-# $ xcrun simctl list
-# == Device Types ==
-# iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
-# iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
-# iPhone 5s (com.apple.CoreSimulator.SimDeviceType.iPhone-5s)
-# iPhone 6 Plus (com.apple.CoreSimulator.SimDeviceType.iPhone-6-Plus)
-# iPhone 6 (com.apple.CoreSimulator.SimDeviceType.iPhone-6)
-# iPad 2 (com.apple.CoreSimulator.SimDeviceType.iPad-2)
-# iPad Retina (com.apple.CoreSimulator.SimDeviceType.iPad-Retina)
-# iPad Air (com.apple.CoreSimulator.SimDeviceType.iPad-Air)
-# Resizable iPhone (com.apple.CoreSimulator.SimDeviceType.Resizable-iPhone)
-# Resizable iPad (com.apple.CoreSimulator.SimDeviceType.Resizable-iPad)
-# == Runtimes ==
-# iOS 7.0 (7.0.3 - 11B507) (com.apple.CoreSimulator.SimRuntime.iOS-7-0)
-# iOS 7.1 (7.1 - 11D167) (com.apple.CoreSimulator.SimRuntime.iOS-7-1)
-# iOS 8.1 (8.1 - 12B411) (com.apple.CoreSimulator.SimRuntime.iOS-8-1)
-# == Devices ==
-# -- iOS 7.0 --
-#     iPhone 4s (16E214BA-9A36-489E-81C5-9CCB9604FF8B) (Shutdown)
-#     iPhone 5 (B3581D0A-B151-4F5E-9884-FC5A78CDD908) (Shutdown)
-#     iPhone 5s (CC4EE950-AC3A-40B9-A360-AD393B8D3D08) (Shutdown)
-#     iPad 2 (FFDC0F02-6F2D-4261-A188-36C04B845F57) (Shutdown)
-#     iPad Retina (62A308F2-3272-4EEA-9CD1-90C2335FD3E8) (Shutdown)
-#     iPad Air (0A5D20B3-5D34-46F5-99B3-EB4AEA113421) (Shutdown)
-# -- iOS 7.1 --
-#     iPhone 4s (DF1BBEDE-90C5-41D9-A11B-8DA659322101) (Shutdown)
-#     iPhone 5 (A3312623-A36D-42FD-BB07-DD817F199572) (Shutdown)
-#     iPhone 5s (9262546F-329F-464B-9706-CD956CE4EC88) (Shutdown)
-#     iPad 2 (27281F5C-9697-4009-9932-722486AFBBD4) (Shutdown)
-#     iPad Retina (215C68E1-4BE6-4169-B30D-1847CF744474) (Shutdown)
-#     iPad Air (88AAFE0A-8784-4CDF-997A-4387E38CF85A) (Shutdown)
-# -- iOS 8.1 --
-#     iPhone 4s (37BC3125-3F35-4B1B-9195-BC5105B115AF) (Shutdown)
-#     iPhone 5 (2DDCAE77-D0F8-4FB1-B9E0-3AFBECA68164) (Shutdown)
-#     iPhone 5s (604674C2-08C7-4F3E-9910-BB7731045B9A) (Shutdown)
-#     iPhone 6 Plus (0569A245-BFFC-4F9D-96BD-BF4D5E28F738) (Shutdown)
-#     iPhone 6 (28727EC6-4665-4FC2-B77C-C2C456206044) (Shutdown)
-#     iPad 2 (32D0747C-DAF9-4EA6-BC66-28EAE7CA357A) (Shutdown)
-#     iPad Retina (78CCB429-8012-4AB9-BB00-48C945BA1722) (Shutdown)
-#     iPad Air (33309D21-9B76-41F2-B16E-8F9B4DB269AE) (Shutdown)
-#     Resizable iPhone (90F9F633-C4A2-499C-82C0-0E2CD82A1829) (Shutdown)
-#     Resizable iPad (115F4F5D-C861-4342-A274-D8438126F158) (Shutdown)
-
-language: objective-c
-osx_image: xcode7.2
+language: objective-c  # even-though its a swift project, if I don't say objective-c I end up with old xcode environment
+# osx_image: xcode7.2
 cache: cocoapods
 #podfile: Example/Podfile
 
@@ -56,6 +12,6 @@ before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- xcrun simctl list
+# - xcrun simctl list
 - set -o pipefail && xcodebuild test -project NACommonUtils.xcodeproj -scheme NACommonUtils  -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2'  -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
