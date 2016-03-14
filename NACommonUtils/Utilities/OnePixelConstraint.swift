@@ -10,8 +10,13 @@
 
 import UIKit
 
-// 1px regardless of screen scale; self.constant = 0.5 on original Retina devices.
-// see http://stackoverflow.com/questions/23666209/how-do-i-create-a-1px-line-in-interface-builder
+/**
+ An auto-layout width/height constraint that will always be 1px regardless of
+ screen scale; self.constant = 0.5 on original Retina devices.
+
+See also:
+- [How do I create a 1px line in Interface Builder?](http://stackoverflow.com/questions/23666209/how-do-i-create-a-1px-line-in-interface-builder)
+*/
 public class OnePixelConstraint: NSLayoutConstraint {
     override public func awakeFromNib() {
         super.awakeFromNib()

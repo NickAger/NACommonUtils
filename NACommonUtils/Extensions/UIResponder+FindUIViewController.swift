@@ -11,6 +11,12 @@
 import UIKit
 
 extension UIResponder {
+    /**
+     Walk the responder chain until we find a `UIViewController`; useful when a 
+     `UIView` needs to access `UIViewController` API
+     
+    - Returns: An optional `UIViewController`
+     */
     public func associatedViewController() -> UIViewController? {
         return (self.transverseResponderChainViewController() as? UIViewController)
     }

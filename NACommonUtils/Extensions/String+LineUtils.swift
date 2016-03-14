@@ -11,11 +11,20 @@
 import Foundation
 
 extension String {
+    /**
+     How many newlines in a string?
+     
+     - Returns: Number of newlines in a string
+     */
     public func lineCount() -> Int {
         return componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet()).count - 1
     }
     
-    // ignores leading whitespace
+    /**
+     Checks if a string starts with a newline, ignoring any leading white space
+     
+     - Returns: `true` if the string starts with a newline; `false` otherwise.
+     */
     public func startsWithNewLine() -> Bool {
         if self.isEmpty {
             return false
@@ -29,7 +38,11 @@ extension String {
         return firstString.isEmpty
     }
     
-    // ignores trailing whitespace
+    /**
+     Checks if a string ends with a newline, ignoring any trailing white space
+     
+     - Returns: `true` if the string ends with a newline; `false` otherwise.
+     */
     public func endsWithNewLine() -> Bool {
         if self.isEmpty {
             return false

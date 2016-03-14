@@ -10,6 +10,14 @@
 
 import UIKit
 
+/**
+ Light-weight version of [MBProgessHUD](https://github.com/jdg/MBProgressHUD) - 
+ shows a translucent HUD centred in a specified view containing an activity indicator
+ 
+ - Parameter superview:  the view to display the HUB over and centred in.
+ 
+ - Returns: The HUD view. Use `view.removeFromSuperview()` to remove the HUD.
+ */
 public func showActivityOverlayAddedTo(superview: UIView) -> UIView {
     let activityOverlay = createActivityOverlay()
     superview.addSubview(activityOverlay)

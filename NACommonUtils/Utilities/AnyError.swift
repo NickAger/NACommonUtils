@@ -13,6 +13,12 @@
 
 import Foundation
 
+/**
+ Type erasing type `ErrorType`
+ 
+ See also:
+ - [Type erasure with AnyError](http://nickager.com/blog/2016/03/07/AnyError)
+ */
 public struct AnyError : ErrorType {
     public let cause:ErrorType
     
