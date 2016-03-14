@@ -10,7 +10,6 @@ cache: cocoapods
 before_install:
 - rvm install 2.1.5
 - gem install cocoapods # Since Travis is not always on latest version
-- pip install codecov
 # - pod install --project-directory=Example
 script:
 # - xcrun simctl list
@@ -18,4 +17,4 @@ script:
 - pod lib lint
 
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
