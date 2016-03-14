@@ -2,6 +2,7 @@
 
 
 [![CI Status](http://img.shields.io/travis/NickAger/NACommonUtils.svg?style=flat)](https://travis-ci.org/NickAger/NACommonUtils)
+[![codecov.io](https://codecov.io/github/NickAger/NACommonUtils/coverage.svg?branch=master)](https://codecov.io/github/NickAger/NACommonUtils?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/NACommonUtils.svg?style=flat)](http://cocoapods.org/pods/NACommonUtils)
 [![License](https://img.shields.io/cocoapods/l/NACommonUtils.svg?style=flat)](http://cocoapods.org/pods/NACommonUtils)
 [![Platform](https://img.shields.io/cocoapods/p/NACommonUtils.svg?style=flat)](http://cocoapods.org/pods/NACommonUtils)
