@@ -17,4 +17,4 @@ script:
 - pod lib lint
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t :4c4eb840-7237-454a-aacd-5c430bf60c47
