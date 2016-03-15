@@ -11,7 +11,7 @@ Swift utilities and extensions used across a number of iOS apps
 
 | Utility | Comment|
 |---------|--------|
-|ActivityOverlay|Light-weight version of [MBProgessHUD](https://github.com/jdg/MBProgressHUD) - shows a translucent HUD containing an activity indicator, centred in a specified view|
+|ActivityOverlay|Light-weight version of [MBProgessHUD](https://github.com/jdg/MBProgressHUD) - shows a translucent HUD, containing an activity indicator, centred in a specified view|
 |AnyError|Provides type erasing unified error type|
 |Array+Functional|`func headTail() -> (head: Element, tail: [Element])?` |
 |NSMutableAttributedString+Creation|`NSMutableAttributedString` creation helpers|
