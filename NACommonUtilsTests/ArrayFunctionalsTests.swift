@@ -36,5 +36,52 @@ class ArrayFunctionalTests: XCTestCase {
         XCTAssert(head == 1)
         XCTAssert(tail == [2,3])
     }
-
+    
+    func testArrayByAppend() {
+        let x = [1,2,3]
+        let y = x.arrayByAppend(10)
+        
+        XCTAssert(y.count == 4)
+        XCTAssert(y.last == 10)
+    }
+    
+    func testArrayByAppendEmpty() {
+        let x = [Int]()
+        let y = x.arrayByAppend(10)
+        
+        XCTAssert(y.count == 1)
+        XCTAssert(y.last == 10)
+    }
+    
+    func testArrayByAppendContentsOf() {
+        let x = [1,2,3]
+        let y = x.arrayByAppendContentsOf([5,6,7,8])
+        
+        XCTAssert(y.count == 7)
+        XCTAssert(y.last == 8)
+    }
+    
+    func testArrayByAppendContentsOfEmpty() {
+        let x = [Int]()
+        let y = x.arrayByAppendContentsOf([5,6,7,8])
+        
+        XCTAssert(y.count == 4)
+        XCTAssert(y.last == 8)
+    }
+    
+    func testArrayByAppendContentsOfEmpty2() {
+        let x = [1,2,5]
+        let y = x.arrayByAppendContentsOf([])
+        
+        XCTAssert(y.count == 3)
+        XCTAssert(y.last == 5)
+    }
+    
+    func testArrayByAppendContentsOfEmpty3() {
+        let x = [Int]()
+        let y = x.arrayByAppendContentsOf([])
+        
+        XCTAssert(y.count == 0)
+        XCTAssert(y.last == nil)
+    }
 }
