@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.description = <<-DESC
                      * ActivityOverlay - Light-weight version of MBProgessHUD. Shows a translucent HUD centred in a specified view containing an activity indicator.
                      * AnyError - Provides type erasing unified error type
-                     * Array+Functional - `func headTail() -> (head: Element, tail: [Element])?`; `arrayByAppend` and `arrayByAppendContentsOf` non-mutating versions of the the stdlib `append` and `appendContentsOf`
+                     * Array+Functional - `func headTail() -> (head: Element, tail: [Element])?`; `arrayByAppend` and `arrayByAppendContentsOf` non-mutating versions of the stdlib `append` and `appendContentsOf`
                      * NSMutableAttributedString+Creation - NSMutableAttributedString creation helpers
                      * OnePixelConstraint - Designed as a auto-layout width/height constraint that will always be 1px regardless of screen scale
                      * String+LineUtils - Strings line helpers
