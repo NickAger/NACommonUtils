@@ -17,13 +17,13 @@ import Foundation
  property `var keepInMemory: <type>?`
  
  */
-protocol KeepInMemoryMixin : class {
+public protocol KeepInMemoryMixin : class {
     var keepInMemory : Self? {get set}
     func keepOurselvesInMemory()
     func freeOurselvesFromMemory()
 }
 
-extension KeepInMemoryMixin {
+public extension KeepInMemoryMixin {
     func keepOurselvesInMemory() {
         keepInMemory = self
     }
