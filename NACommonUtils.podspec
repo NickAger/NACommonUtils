@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NACommonUtils"
-  s.version      = "1.0.9"
+  s.version      = "1.0.10"
   s.summary      = "Some useful utilities."
   s.homepage     = "http://nickager.com/blog/2016/03/04/NACommonUtils"
   s.requires_arc = true
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                      * UIButton+ActionBlock - Button onPressed: block extension
                      * UIResponder+FindUIViewController - Walk the responder chain until we find a `UIViewController`; useful when a `UIView` needs to access `UIViewController` API
                      * UIView+Autolayout - Autolayout helpers; `useAutolayout()`, `centerInView(..)`, `constrainToWidth(..)`, `constrainToHeight(..)`
-                     * KeepInMemoryMixin - Add to a class to allow the class to keep itself in memory
+                     * KeepInMemoryMixin - Class mixin to allow the class to keep itself in memory
                     DESC
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
