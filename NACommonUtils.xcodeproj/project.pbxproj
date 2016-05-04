@@ -22,6 +22,8 @@
 		848ED5801C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */; };
 		848ED5841C9331EE00EC5B59 /* StringLineUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */; };
 		84A93DD61CD3A59000865009 /* KeepInMemoryMixin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */; };
+		84A93E011CDA931500865009 /* SequenceType+find.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A93E001CDA931500865009 /* SequenceType+find.swift */; };
+		84A93E031CDA938400865009 /* SequenceTypeFindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A93E021CDA938400865009 /* SequenceTypeFindTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringCreationTests.swift; sourceTree = "<group>"; };
 		848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLineUtilsTests.swift; sourceTree = "<group>"; };
 		84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepInMemoryMixin.swift; sourceTree = "<group>"; };
+		84A93E001CDA931500865009 /* SequenceType+find.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+find.swift"; sourceTree = "<group>"; };
+		84A93E021CDA938400865009 /* SequenceTypeFindTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeFindTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 				848ED42F1C8DD42D00EC5B59 /* Info.plist */,
 				848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */,
 				848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */,
+				84A93E021CDA938400865009 /* SequenceTypeFindTests.swift */,
 			);
 			path = NACommonUtilsTests;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				848ED4411C8DDD3800EC5B59 /* UIResponder+FindUIViewController.swift */,
 				848ED4421C8DDD3800EC5B59 /* UIView+Autolayout.swift */,
 				84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */,
+				84A93E001CDA931500865009 /* SequenceType+find.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				848ED4481C8DDD3800EC5B59 /* UIView+Autolayout.swift in Sources */,
 				848ED44D1C8DDD4000EC5B59 /* ActivityOverlay.swift in Sources */,
 				848ED44E1C8DDD4000EC5B59 /* AnyError.swift in Sources */,
+				84A93E011CDA931500865009 /* SequenceType+find.swift in Sources */,
 				848ED4431C8DDD3800EC5B59 /* Array+Functional.swift in Sources */,
 				848ED4441C8DDD3800EC5B59 /* NSMutableAttributedString+Creation.swift in Sources */,
 				848ED4461C8DDD3800EC5B59 /* UIButton+ActionBlock.swift in Sources */,
@@ -264,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				848ED5841C9331EE00EC5B59 /* StringLineUtilsTests.swift in Sources */,
+				84A93E031CDA938400865009 /* SequenceTypeFindTests.swift in Sources */,
 				848ED42E1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift in Sources */,
 				848ED5801C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift in Sources */,
 			);
