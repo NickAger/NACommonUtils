@@ -13,7 +13,7 @@ before_install:
 # - pod install --project-directory=Example
 script:
 # - xcrun simctl list
-- set -o pipefail && xcodebuild test -project NACommonUtils.xcodeproj -scheme NACommonUtils  -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2'  -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+- set -o pipefail && xcodebuild test -project NACommonUtils.xcodeproj -scheme NACommonUtils  -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'  -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
 - pod lib lint
 
 after_success:
