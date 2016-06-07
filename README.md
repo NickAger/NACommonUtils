@@ -21,6 +21,7 @@ Swift utilities and extensions used across a number of iOS apps
 |UIResponder+FindUIViewController|Walk the responder chain until we find a `UIViewController`; useful when a `UIView` needs to access `UIViewController` API|
 |UIView+Autolayout|Autolayout helpers; `useAutolayout()`, `centerInView(..)`, `constrainToWidth(..)`, `constrainToHeight(..) `|
 |KeepInMemoryMixin|Class mixin to allow the class to keep itself in memory|
+|UIView+NibLoading|instanceFromNib() Load an instance of a view from a nib named identically to the class.|
 
 ## Installation
 
