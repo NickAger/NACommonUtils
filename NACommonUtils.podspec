@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NACommonUtils"
-  s.version      = "1.0.10"
+  s.version      = "1.0.11"
   s.summary      = "Some useful utilities."
   s.homepage     = "http://nickager.com/blog/2016/03/04/NACommonUtils"
   s.requires_arc = true
@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
                      * UIResponder+FindUIViewController - Walk the responder chain until we find a `UIViewController`; useful when a `UIView` needs to access `UIViewController` API
                      * UIView+Autolayout - Autolayout helpers; `useAutolayout()`, `centerInView(..)`, `constrainToWidth(..)`, `constrainToHeight(..)`
                      * KeepInMemoryMixin - Class mixin to allow the class to keep itself in memory
+                     * UIView+NibLoading - instanceFromNib() Load an instance of a view from a nib named identically to the class.
                     DESC
 
   s.license      = { :type => "MIT", :file => "LICENSE" }

@@ -24,6 +24,7 @@
 		84A93DD61CD3A59000865009 /* KeepInMemoryMixin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */; };
 		84A93E011CDA931500865009 /* SequenceType+find.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A93E001CDA931500865009 /* SequenceType+find.swift */; };
 		84A93E031CDA938400865009 /* SequenceTypeFindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A93E021CDA938400865009 /* SequenceTypeFindTests.swift */; };
+		84D389F41D0713E300EE785D /* UIView+NibLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D389F31D0713E300EE785D /* UIView+NibLoading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepInMemoryMixin.swift; sourceTree = "<group>"; };
 		84A93E001CDA931500865009 /* SequenceType+find.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+find.swift"; sourceTree = "<group>"; };
 		84A93E021CDA938400865009 /* SequenceTypeFindTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeFindTests.swift; sourceTree = "<group>"; };
+		84D389F31D0713E300EE785D /* UIView+NibLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoading.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				848ED4421C8DDD3800EC5B59 /* UIView+Autolayout.swift */,
 				84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */,
 				84A93E001CDA931500865009 /* SequenceType+find.swift */,
+				84D389F31D0713E300EE785D /* UIView+NibLoading.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				848ED4451C8DDD3800EC5B59 /* String+LineUtils.swift in Sources */,
+				84D389F41D0713E300EE785D /* UIView+NibLoading.swift in Sources */,
 				848ED44F1C8DDD4000EC5B59 /* OnePixelConstraint.swift in Sources */,
 				848ED4481C8DDD3800EC5B59 /* UIView+Autolayout.swift in Sources */,
 				848ED44D1C8DDD4000EC5B59 /* ActivityOverlay.swift in Sources */,
