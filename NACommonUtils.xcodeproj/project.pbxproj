@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841A54B31D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A54B21D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift */; };
+		841A54B51D09C218006E6272 /* NACommonUtils.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 841A54B41D09C218006E6272 /* NACommonUtils.podspec */; };
+		841A54B71D09C256006E6272 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 841A54B61D09C256006E6272 /* README.md */; };
 		848ED4221C8DD42D00EC5B59 /* NACommonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 848ED4211C8DD42D00EC5B59 /* NACommonUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		848ED4291C8DD42D00EC5B59 /* NACommonUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848ED41E1C8DD42D00EC5B59 /* NACommonUtils.framework */; };
 		848ED42E1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED42D1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841A54B21D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+ActionBlock.swift"; sourceTree = "<group>"; };
+		841A54B41D09C218006E6272 /* NACommonUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NACommonUtils.podspec; sourceTree = "<group>"; };
+		841A54B61D09C256006E6272 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		848ED41E1C8DD42D00EC5B59 /* NACommonUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NACommonUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848ED4211C8DD42D00EC5B59 /* NACommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NACommonUtils.h; sourceTree = "<group>"; };
 		848ED4231C8DD42D00EC5B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +89,8 @@
 		848ED4141C8DD42D00EC5B59 = {
 			isa = PBXGroup;
 			children = (
+				841A54B41D09C218006E6272 /* NACommonUtils.podspec */,
+				841A54B61D09C256006E6272 /* README.md */,
 				848ED4201C8DD42D00EC5B59 /* NACommonUtils */,
 				848ED42C1C8DD42D00EC5B59 /* NACommonUtilsTests */,
 				848ED41F1C8DD42D00EC5B59 /* Products */,
@@ -133,6 +141,7 @@
 				84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */,
 				84A93E001CDA931500865009 /* SequenceType+find.swift */,
 				84D389F31D0713E300EE785D /* UIView+NibLoading.swift */,
+				841A54B21D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841A54B51D09C218006E6272 /* NACommonUtils.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +275,8 @@
 				848ED4431C8DDD3800EC5B59 /* Array+Functional.swift in Sources */,
 				848ED4441C8DDD3800EC5B59 /* NSMutableAttributedString+Creation.swift in Sources */,
 				848ED4461C8DDD3800EC5B59 /* UIButton+ActionBlock.swift in Sources */,
+				841A54B71D09C256006E6272 /* README.md in Sources */,
+				841A54B31D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift in Sources */,
 				84A93DD61CD3A59000865009 /* KeepInMemoryMixin.swift in Sources */,
 				848ED4471C8DDD3800EC5B59 /* UIResponder+FindUIViewController.swift in Sources */,
 			);

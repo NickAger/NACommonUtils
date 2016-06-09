@@ -18,6 +18,7 @@ Swift utilities and extensions used across a number of iOS apps
 |OnePixelConstraint|Designed as a auto-layout width/height constraint that will always be 1px regardless of screen scale|
 |String+LineUtils|Strings line helpers|
 |UIButton+ActionBlock|Button onPressed: block extension|
+|UIGestureRecognizer+ActionBlock|Gesture recognizer block extension|
 |UIResponder+FindUIViewController|Walk the responder chain until we find a `UIViewController`; useful when a `UIView` needs to access `UIViewController` API|
 |UIView+Autolayout|Autolayout helpers; `useAutolayout()`, `centerInView(..)`, `constrainToWidth(..)`, `constrainToHeight(..) `|
 |KeepInMemoryMixin|Class mixin to allow the class to keep itself in memory|

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NACommonUtils"
-  s.version      = "1.0.11"
+  s.version      = "1.1.0"
   s.summary      = "Some useful utilities."
   s.homepage     = "http://nickager.com/blog/2016/03/04/NACommonUtils"
   s.requires_arc = true
@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
                      * OnePixelConstraint - Designed as a auto-layout width/height constraint that will always be 1px regardless of screen scale
                      * String+LineUtils - Strings line helpers
                      * UIButton+ActionBlock - Button onPressed: block extension
+                     * UIGestureRecognizer+ActionBlock - Gesture recognizer block extension
                      * UIResponder+FindUIViewController - Walk the responder chain until we find a `UIViewController`; useful when a `UIView` needs to access `UIViewController` API
                      * UIView+Autolayout - Autolayout helpers; `useAutolayout()`, `centerInView(..)`, `constrainToWidth(..)`, `constrainToHeight(..)`
                      * KeepInMemoryMixin - Class mixin to allow the class to keep itself in memory
