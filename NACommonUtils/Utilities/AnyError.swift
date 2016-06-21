@@ -4,7 +4,7 @@
 //
 //  NACommonUtils
 //
-//  Type erasure for ErrorType(s). Designed to be used as the error type associated with a Future - so that when composing futures with man/flatMap the error type is the same and so can be propagated through the compositional chain.
+//  Type erasure for ErrorType(s). Designed to be used as the error type associated with a Future - so that when composing futures with map/flatMap the error type is the same and so can be propagated through the compositional chain.
 //  see https://github.com/Thomvis/BrightFutures/issues/115
 //
 //  Created by Nick Ager on 10/02/2016.
