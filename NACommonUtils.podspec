@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NACommonUtils"
-  s.version      = "1.2.0"
+  s.version      = "1.3.0"
   s.summary      = "Some useful utilities."
   s.homepage     = "http://nickager.com/blog/2016/03/04/NACommonUtils"
   s.requires_arc = true
@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
                      * UIView+Autolayout - Autolayout helpers; `useAutolayout()`, `centerInView(..)`, `constrainToWidth(..)`, `constrainToHeight(..)`
                      * KeepInMemoryMixin - Class mixin to allow the class to keep itself in memory
                      * UIView+NibLoading - instanceFromNib() Load an instance of a view from a nib named identically to the class.
+                     * UIStoryboard+InstantiateViewController - type-safe Storyboard view controller instantiation
+                     * UIView+border - layer based UIView border util
                     DESC
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
