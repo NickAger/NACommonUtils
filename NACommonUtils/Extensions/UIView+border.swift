@@ -14,4 +14,11 @@ extension UIView {
         layer.borderColor = UIColor.lightGrayColor().CGColor
         layer.borderWidth = 1.0 / UIScreen.mainScreen().scale
     }
+    
+    public func addShadow() {
+        self.clipsToBounds = false
+        self.layer.shadowColor = UIColor.blackColor().CGColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.layer.shadowOpacity = 0.2
+    }
 }
