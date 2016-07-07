@@ -20,7 +20,6 @@
 		848ED4471C8DDD3800EC5B59 /* UIResponder+FindUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED4411C8DDD3800EC5B59 /* UIResponder+FindUIViewController.swift */; };
 		848ED4481C8DDD3800EC5B59 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED4421C8DDD3800EC5B59 /* UIView+Autolayout.swift */; };
 		848ED44D1C8DDD4000EC5B59 /* ActivityOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED44A1C8DDD4000EC5B59 /* ActivityOverlay.swift */; };
-		848ED44E1C8DDD4000EC5B59 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED44B1C8DDD4000EC5B59 /* AnyError.swift */; };
 		848ED44F1C8DDD4000EC5B59 /* OnePixelConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED44C1C8DDD4000EC5B59 /* OnePixelConstraint.swift */; };
 		848ED5801C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */; };
 		848ED5841C9331EE00EC5B59 /* StringLineUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */; };
@@ -59,7 +58,6 @@
 		848ED4411C8DDD3800EC5B59 /* UIResponder+FindUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+FindUIViewController.swift"; sourceTree = "<group>"; };
 		848ED4421C8DDD3800EC5B59 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
 		848ED44A1C8DDD4000EC5B59 /* ActivityOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityOverlay.swift; sourceTree = "<group>"; };
-		848ED44B1C8DDD4000EC5B59 /* AnyError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
 		848ED44C1C8DDD4000EC5B59 /* OnePixelConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePixelConstraint.swift; sourceTree = "<group>"; };
 		848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringCreationTests.swift; sourceTree = "<group>"; };
 		848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLineUtilsTests.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				848ED44A1C8DDD4000EC5B59 /* ActivityOverlay.swift */,
-				848ED44B1C8DDD4000EC5B59 /* AnyError.swift */,
 				848ED44C1C8DDD4000EC5B59 /* OnePixelConstraint.swift */,
 			);
 			path = Utilities;
@@ -277,7 +274,6 @@
 				848ED44F1C8DDD4000EC5B59 /* OnePixelConstraint.swift in Sources */,
 				848ED4481C8DDD3800EC5B59 /* UIView+Autolayout.swift in Sources */,
 				848ED44D1C8DDD4000EC5B59 /* ActivityOverlay.swift in Sources */,
-				848ED44E1C8DDD4000EC5B59 /* AnyError.swift in Sources */,
 				84A93E011CDA931500865009 /* SequenceType+find.swift in Sources */,
 				848ED4431C8DDD3800EC5B59 /* Array+Functional.swift in Sources */,
 				84EDD5D11D1D550A00A2EA5F /* UIStoryboard+InstantiateViewController.swift in Sources */,
