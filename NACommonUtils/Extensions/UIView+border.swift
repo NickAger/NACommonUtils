@@ -10,8 +10,8 @@
 import UIKit
 
 extension UIView {
-    public func addBorder() {
-        layer.borderColor = UIColor.lightGrayColor().CGColor
+    public func addBorder(color: UIColor = UIColor.lightGrayColor()) {
+        layer.borderColor = color.CGColor
         layer.borderWidth = 1.0 / UIScreen.mainScreen().scale
     }
     
