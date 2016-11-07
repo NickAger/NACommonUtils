@@ -13,11 +13,11 @@ import ObjectiveC
 
 private var ActionBlockKey: UInt8 = 0
 
-public typealias ButtonActionBlockType = (sender: UIButton) -> Void
+public typealias ButtonActionBlockType = (UIButton) -> Void
 
 private class ActionBlockWrapper : NSObject {
     var block : ButtonActionBlockType
-    init(block: ButtonActionBlockType) {
+    init(block: @escaping ButtonActionBlockType) {
         self.block = block
     }
 }
@@ -28,13 +28,13 @@ extension UIButton {
      
      - Parameter block: callback block when the button is 'pressed'
      */
-    public func onPressed(block: ButtonActionBlockType) {
+    public func onPressed(block: @escaping ButtonActionBlockType) {
         objc_setAssociatedObject(self, &ActionBlockKey, ActionBlockWrapper(block: block), objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC) // note we don't use OBJC_ASSOCIATION_COPY_NONATOMIC as we're storing the ActionBlockWrapper object not the onPressAction dispatch_block_t. ActionBlockWrapper will copy the onPressAction block correctly.
-        addTarget(self, action: #selector(extensionHandleBlockAction(_:)), forControlEvents: .TouchUpInside)
+        addTarget(self, action: #selector(extensionHandleBlockAction(sender:)), for: .touchUpInside)
     }
     
     @objc private func extensionHandleBlockAction(sender: UIButton) {
         let wrapper = objc_getAssociatedObject(self, &ActionBlockKey) as! ActionBlockWrapper
-        wrapper.block(sender: sender)
+        wrapper.block(sender)
     }
 }

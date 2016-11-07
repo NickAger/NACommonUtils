@@ -1,5 +1,5 @@
 //
-//  KeepInMemoryMixin.swift
+//  KeepInMemoryTrait.swift
 //  NACommonUtils
 //
 //  Created by Nick Ager on 29/04/2016.
@@ -9,7 +9,7 @@
 import Foundation
 
 // Note: any class implementing this protocol needs to be declared final otherwise you'll end-up with a compiler error:
-// 'KeepInMemoryProtocol' requirement 'keepInMemory' cannot be satisfied by a non-final class because it uses 'Self' in a non-parameter, non-result type position
+// 'KeepInMemoryTrait' requirement 'keepInMemory' cannot be satisfied by a non-final class because it uses 'Self' in a non-parameter, non-result type position
 // see: http://stackoverflow.com/questions/32999293/how-do-you-implement-protocol-methods-that-return-covariant-selfs
 
 /**
@@ -17,13 +17,13 @@ import Foundation
  property `var keepInMemory: <type>?`
  
  */
-public protocol KeepInMemoryMixin : class {
+public protocol KeepInMemoryTrait : class {
     var keepInMemory : Self? {get set}
     func keepOurselvesInMemory()
     func freeOurselvesFromMemory()
 }
 
-public extension KeepInMemoryMixin {
+public extension KeepInMemoryTrait {
     func keepOurselvesInMemory() {
         keepInMemory = self
     }

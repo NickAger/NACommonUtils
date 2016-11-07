@@ -11,12 +11,12 @@ import UIKit
 
 extension UIStoryboard {
     public func instantiateViewControllerIdentifiedByType<VC: UIViewController>() -> VC {
-        let viewController = instantiateViewControllerWithIdentifier(String(VC)) as! VC
+        let viewController = self.instantiateViewController(withIdentifier: String(describing:VC.self)) as! VC
         return viewController
     }
     
     public func instantiateViewController<VC: UIViewController>(identifier: String) -> VC {
-        let viewController = instantiateViewControllerWithIdentifier(identifier) as! VC
+        let viewController = self.instantiateViewController(withIdentifier: identifier) as! VC
         return viewController
     }
 }

@@ -10,6 +10,10 @@
 		841A54B31D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A54B21D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift */; };
 		841A54B51D09C218006E6272 /* NACommonUtils.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 841A54B41D09C218006E6272 /* NACommonUtils.podspec */; };
 		841A54B71D09C256006E6272 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 841A54B61D09C256006E6272 /* README.md */; };
+		8442E8661DD0E131003B0C75 /* UILabel+Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E8651DD0E131003B0C75 /* UILabel+Measurement.swift */; };
+		8442E8681DD0E140003B0C75 /* KeepInMemoryTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E8671DD0E140003B0C75 /* KeepInMemoryTrait.swift */; };
+		8442E86B1DD0E155003B0C75 /* UITableViewCell+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E8691DD0E155003B0C75 /* UITableViewCell+Helpers.swift */; };
+		8442E86C1DD0E155003B0C75 /* UITableViewCell+RegistrationTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E86A1DD0E155003B0C75 /* UITableViewCell+RegistrationTrait.swift */; };
 		848ED4221C8DD42D00EC5B59 /* NACommonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 848ED4211C8DD42D00EC5B59 /* NACommonUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		848ED4291C8DD42D00EC5B59 /* NACommonUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848ED41E1C8DD42D00EC5B59 /* NACommonUtils.framework */; };
 		848ED42E1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED42D1C8DD42D00EC5B59 /* ArrayFunctionalsTests.swift */; };
@@ -23,7 +27,6 @@
 		848ED44F1C8DDD4000EC5B59 /* OnePixelConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED44C1C8DDD4000EC5B59 /* OnePixelConstraint.swift */; };
 		848ED5801C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */; };
 		848ED5841C9331EE00EC5B59 /* StringLineUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */; };
-		84A93DD61CD3A59000865009 /* KeepInMemoryMixin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */; };
 		84A93E011CDA931500865009 /* SequenceType+find.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A93E001CDA931500865009 /* SequenceType+find.swift */; };
 		84A93E031CDA938400865009 /* SequenceTypeFindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A93E021CDA938400865009 /* SequenceTypeFindTests.swift */; };
 		84D389F41D0713E300EE785D /* UIView+NibLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D389F31D0713E300EE785D /* UIView+NibLoading.swift */; };
@@ -45,6 +48,10 @@
 		841A54B21D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+ActionBlock.swift"; sourceTree = "<group>"; };
 		841A54B41D09C218006E6272 /* NACommonUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NACommonUtils.podspec; sourceTree = "<group>"; };
 		841A54B61D09C256006E6272 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8442E8651DD0E131003B0C75 /* UILabel+Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Measurement.swift"; sourceTree = "<group>"; };
+		8442E8671DD0E140003B0C75 /* KeepInMemoryTrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepInMemoryTrait.swift; sourceTree = "<group>"; };
+		8442E8691DD0E155003B0C75 /* UITableViewCell+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Helpers.swift"; sourceTree = "<group>"; };
+		8442E86A1DD0E155003B0C75 /* UITableViewCell+RegistrationTrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+RegistrationTrait.swift"; sourceTree = "<group>"; };
 		848ED41E1C8DD42D00EC5B59 /* NACommonUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NACommonUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848ED4211C8DD42D00EC5B59 /* NACommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NACommonUtils.h; sourceTree = "<group>"; };
 		848ED4231C8DD42D00EC5B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +68,6 @@
 		848ED44C1C8DDD4000EC5B59 /* OnePixelConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePixelConstraint.swift; sourceTree = "<group>"; };
 		848ED57F1C932D4200EC5B59 /* NSMutableAttributedStringCreationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringCreationTests.swift; sourceTree = "<group>"; };
 		848ED5831C9331EE00EC5B59 /* StringLineUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLineUtilsTests.swift; sourceTree = "<group>"; };
-		84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepInMemoryMixin.swift; sourceTree = "<group>"; };
 		84A93E001CDA931500865009 /* SequenceType+find.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+find.swift"; sourceTree = "<group>"; };
 		84A93E021CDA938400865009 /* SequenceTypeFindTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeFindTests.swift; sourceTree = "<group>"; };
 		84D389F31D0713E300EE785D /* UIView+NibLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoading.swift"; sourceTree = "<group>"; };
@@ -134,7 +140,11 @@
 		848ED43C1C8DDD3800EC5B59 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8442E8651DD0E131003B0C75 /* UILabel+Measurement.swift */,
+				8442E8671DD0E140003B0C75 /* KeepInMemoryTrait.swift */,
 				84EDD5D61D1E1CE600A2EA5F /* UIView+border.swift */,
+				8442E8691DD0E155003B0C75 /* UITableViewCell+Helpers.swift */,
+				8442E86A1DD0E155003B0C75 /* UITableViewCell+RegistrationTrait.swift */,
 				84EDD5D01D1D550A00A2EA5F /* UIStoryboard+InstantiateViewController.swift */,
 				848ED43D1C8DDD3800EC5B59 /* Array+Functional.swift */,
 				848ED43E1C8DDD3800EC5B59 /* NSMutableAttributedString+Creation.swift */,
@@ -142,7 +152,6 @@
 				848ED4401C8DDD3800EC5B59 /* UIButton+ActionBlock.swift */,
 				848ED4411C8DDD3800EC5B59 /* UIResponder+FindUIViewController.swift */,
 				848ED4421C8DDD3800EC5B59 /* UIView+Autolayout.swift */,
-				84A93DD51CD3A59000865009 /* KeepInMemoryMixin.swift */,
 				84A93E001CDA931500865009 /* SequenceType+find.swift */,
 				84D389F31D0713E300EE785D /* UIView+NibLoading.swift */,
 				841A54B21D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift */,
@@ -224,6 +233,7 @@
 					};
 					848ED4271C8DD42D00EC5B59 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -276,13 +286,16 @@
 				848ED44D1C8DDD4000EC5B59 /* ActivityOverlay.swift in Sources */,
 				84A93E011CDA931500865009 /* SequenceType+find.swift in Sources */,
 				848ED4431C8DDD3800EC5B59 /* Array+Functional.swift in Sources */,
+				8442E8661DD0E131003B0C75 /* UILabel+Measurement.swift in Sources */,
+				8442E86C1DD0E155003B0C75 /* UITableViewCell+RegistrationTrait.swift in Sources */,
 				84EDD5D11D1D550A00A2EA5F /* UIStoryboard+InstantiateViewController.swift in Sources */,
 				848ED4441C8DDD3800EC5B59 /* NSMutableAttributedString+Creation.swift in Sources */,
+				8442E8681DD0E140003B0C75 /* KeepInMemoryTrait.swift in Sources */,
 				848ED4461C8DDD3800EC5B59 /* UIButton+ActionBlock.swift in Sources */,
 				841A54B71D09C256006E6272 /* README.md in Sources */,
 				841A54B31D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift in Sources */,
-				84A93DD61CD3A59000865009 /* KeepInMemoryMixin.swift in Sources */,
 				848ED4471C8DDD3800EC5B59 /* UIResponder+FindUIViewController.swift in Sources */,
+				8442E86B1DD0E155003B0C75 /* UITableViewCell+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "RocketBox-Ltd.NACommonUtils";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -426,6 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "RocketBox-Ltd.NACommonUtils";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -436,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RocketBox-Ltd.NACommonUtilsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -446,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RocketBox-Ltd.NACommonUtilsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

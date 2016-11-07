@@ -21,6 +21,6 @@ public class OnePixelConstraint: NSLayoutConstraint {
     override public func awakeFromNib() {
         super.awakeFromNib()
         
-        self.constant = 1.0 / UIScreen.mainScreen().scale
+        self.constant = 1.0 / UIScreen.main.scale
     }
 }

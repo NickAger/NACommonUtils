@@ -22,13 +22,13 @@ extension UIResponder {
     }
     
     private func transverseResponderChainViewController() -> UIResponder? {
-        guard let nextRespondr = self.nextResponder() else {
+        guard let nextRespondr = self.next else {
             return nil
         }
         
-        if nextRespondr.isKindOfClass(UIViewController) {
+        if nextRespondr.isKind(of: UIViewController.self) {
             return nextRespondr
-        } else if nextRespondr.isKindOfClass(UIResponder) {
+        } else if nextRespondr.isKind(of: UIResponder.self) {
             return nextRespondr.transverseResponderChainViewController()
         } else {
             return nil

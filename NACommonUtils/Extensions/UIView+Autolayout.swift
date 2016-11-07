@@ -1,6 +1,6 @@
 //
 //  UIView+Autolayout.swift
-//  Autolayout helpers
+//  Autolayout helpers - somewhat obsoleted by layout anchors - https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/ProgrammaticallyCreatingConstraints.html
 //
 //  NACommonUtils
 //
@@ -18,7 +18,7 @@ extension UIView {
      - Returns: `Self` - designed as a fluid API eg: 
      `let label = UILabel().useAutolayout()`
      */
-    public func useAutolayout() -> Self {
+    @discardableResult public func useAutolayout() -> Self {
         self.translatesAutoresizingMaskIntoConstraints = false
         return self
     }
@@ -26,19 +26,48 @@ extension UIView {
 
 extension UIView {
     /**
-     Adds the `NSLayoutConstraint` for centering a view in a superview. The 
+     Adds the `NSLayoutConstraint`s for centering a view in a superview. The
      constraints are added to the specified superview.
      
      - Parameter superview: the view to be centered within.
      
      - Returns: The array of associated `NSLayoutConstraint`
      */
-    public func centerInView(superview: UIView) -> [NSLayoutConstraint] {
-        var constraints = [NSLayoutConstraint(item: self, attribute:.CenterX, relatedBy:.Equal, toItem:superview, attribute:.CenterX, multiplier:1.0, constant:0)]
-        constraints.append(NSLayoutConstraint(item: self, attribute:.CenterY, relatedBy:.Equal, toItem:superview, attribute:.CenterY, multiplier:1.0, constant:0))
+    @discardableResult public func centerIn(superview: UIView) -> [NSLayoutConstraint] {
+        let horizontalCenterConstraint = centerHorizontallyIn(superview: superview)
+        let verticallyCenterConstraint = centerVerticallyIn(superview: superview)
         
-        superview.addConstraints(constraints)
-        return constraints
+        return [horizontalCenterConstraint, verticallyCenterConstraint]
+    }
+    
+    /**
+     Adds the `NSLayoutConstraint` for centering horizontally a view 
+     in a superview. The constraints are added to the specified superview.
+     
+     - Parameter superview: the view to be centered within.
+     
+     - Returns: The array of associated `NSLayoutConstraint`
+     */
+    @discardableResult public func centerHorizontallyIn(superview: UIView) -> NSLayoutConstraint {
+        let constraint = NSLayoutConstraint(item: self, attribute:.centerX, relatedBy:.equal, toItem:superview, attribute:.centerX, multiplier:1.0, constant:0)
+        
+        superview.addConstraint(constraint)
+        return constraint
+    }
+    
+    /**
+     Adds the `NSLayoutConstraint` for centering vertically a view
+     in a superview. The constraints are added to the specified superview.
+     
+     - Parameter superview: the view to be centered within.
+     
+     - Returns: The array of associated `NSLayoutConstraint`
+     */
+    @discardableResult public func centerVerticallyIn(superview: UIView) -> NSLayoutConstraint {
+        let constraint = NSLayoutConstraint(item: self, attribute:.centerY, relatedBy:.equal, toItem:superview, attribute:.centerY, multiplier:1.0, constant:0)
+        
+        superview.addConstraint(constraint)
+        return constraint
     }
     
     /**
@@ -49,8 +78,8 @@ extension UIView {
      
      - Returns: The associated `NSLayoutConstraint`
      */
-    public func constrainToWidth(width: CGFloat) -> NSLayoutConstraint {
-        let constraint = NSLayoutConstraint(item: self, attribute: .Width, relatedBy:.Equal, toItem:nil, attribute:.NotAnAttribute, multiplier:0, constant:width)
+    @discardableResult public func constrainTo(width: CGFloat) -> NSLayoutConstraint {
+        let constraint = NSLayoutConstraint(item: self, attribute: .width, relatedBy:.equal, toItem:nil, attribute:.notAnAttribute, multiplier:0, constant:width)
         self.addConstraint(constraint)
         return constraint
     }
@@ -63,9 +92,23 @@ extension UIView {
      
      - Returns: The associated `NSLayoutConstraint`
      */
-    public func constrainToHeight(height: CGFloat) -> NSLayoutConstraint {
-        let constraint = NSLayoutConstraint(item: self, attribute: .Height, relatedBy:.Equal, toItem:nil, attribute:.NotAnAttribute, multiplier:0, constant:height)
+    @discardableResult public func constrainTo(height: CGFloat) -> NSLayoutConstraint {
+        let constraint = NSLayoutConstraint(item: self, attribute: .height, relatedBy:.equal, toItem:nil, attribute:.notAnAttribute, multiplier:0, constant:height)
         self.addConstraint(constraint)
         return constraint
+    }
+    
+    /**
+     Adds `NSLayoutConstraint`s for constraining a view to a specified size.
+     The constraints are added directly to the view.
+     
+     - Parameter size: size
+     
+     - Returns: The associated `NSLayoutConstraint`s
+     */
+    @discardableResult public func constrainTo(size: CGSize) -> [NSLayoutConstraint] {
+        let heightConstraint = constrainTo(height: size.height)
+        let widthConstraint = constrainTo(width: size.width)
+        return [heightConstraint,widthConstraint]
     }
 }

@@ -13,7 +13,7 @@ class NSMutableAttributedStringCreationTests: XCTestCase {
 
     func testInit() {
         let titleString = " iDiff View\n\n"
-        let title = NSMutableAttributedString(string: titleString, attributes: [NSFontAttributeName : UIFont.boldSystemFontOfSize(20)])
+        let title = NSMutableAttributedString(string: titleString, attributes: [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 20)])
         let bodyString = "iDiff View highlights the difference between two versions of a text file."
         let body = NSAttributedString(string: bodyString)
         
@@ -21,7 +21,7 @@ class NSMutableAttributedStringCreationTests: XCTestCase {
         let x = NSMutableAttributedString(attributedStrings: [title, body])
         
         let y = NSMutableAttributedString(string: titleString + bodyString)
-        y.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFontOfSize(20), range: NSRange(location: 0, length: titleString.characters.count))
+        y.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFont(ofSize: 20), range: NSRange(location: 0, length: titleString.characters.count))
         
         XCTAssert(x == y)
     }

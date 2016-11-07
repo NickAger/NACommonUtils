@@ -26,12 +26,12 @@ public extension UIView {
     // Idea for handling return types from:
     // http://stackoverflow.com/questions/33200035/return-instancetype-in-swift
     private static func instanceFromNibHelper<T>() -> T? {
-        let viewTypeName = String(self)
-        let elements = NSBundle.mainBundle().loadNibNamed(viewTypeName, owner: nil, options: nil)
+        let viewTypeName = String(describing: self)
+        let elements = Bundle.main.loadNibNamed(viewTypeName, owner: nil, options: nil)
         
         var view : T? = nil
-        if let index = elements.indexOf({ $0 is T }) {
-            view = (elements[index]) as? T
+        if let index = elements?.index(where: { $0 is T }) {
+            view = (elements?[index]) as? T
         }
         return view
     }

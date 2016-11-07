@@ -25,7 +25,7 @@ public func showActivityOverlayAddedTo(superview: UIView) -> UIView {
 
     let activityIndicator = createActivityIndicator()
     activityOverlay.addSubview(activityIndicator)
-    activityIndicator.centerInView(activityOverlay)
+    activityIndicator.centerIn(superview: activityOverlay)
     
     return activityOverlay
 }
@@ -35,21 +35,21 @@ private func createActivityOverlay() -> UIView {
     activityOverlay.layer.cornerRadius = 10
     activityOverlay.layer.masksToBounds = true
     activityOverlay.alpha = 0.9
-    activityOverlay.opaque = false
-    activityOverlay.backgroundColor = UIColor.darkGrayColor()
+    activityOverlay.isOpaque = false
+    activityOverlay.backgroundColor = UIColor.darkGray
     activityOverlay.translatesAutoresizingMaskIntoConstraints = false
     activityOverlay.useAutolayout()
     return activityOverlay
 }
 
 private func addContraints(to activityOverlay: UIView, superview: UIView) {
-    activityOverlay.constrainToWidth(100)
-    activityOverlay.constrainToHeight(100)
-    activityOverlay.centerInView(superview)
+    activityOverlay.constrainTo(width:100)
+    activityOverlay.constrainTo(height:100)
+    activityOverlay.centerIn(superview:superview)
 }
 
 private func createActivityIndicator() -> UIView {
-    let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
+    let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
     activityIndicator.startAnimating()
     activityIndicator.useAutolayout()
     return activityIndicator

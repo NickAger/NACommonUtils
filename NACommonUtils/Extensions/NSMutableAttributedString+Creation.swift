@@ -22,7 +22,7 @@ extension NSMutableAttributedString {
     public convenience init(attributedStrings: [NSAttributedString]) {
         if let (head, tail) = attributedStrings.headTail() {
             self.init(attributedString:head)
-            _ = tail.reduce(self, combine: reducibleAppend)
+            _ = tail.reduce(self, reducibleAppend)
         } else {
             self.init(string:"")
         }
@@ -35,6 +35,6 @@ extension NSMutableAttributedString {
  `let attributedString = attributedStrings.reduce(NSMutableAttributedString(), combine: reducibleAppend)`
 */
 public func reducibleAppend(appendTo attrString: NSMutableAttributedString, appendeeAttrString: NSAttributedString) -> NSMutableAttributedString {
-    attrString.appendAttributedString(appendeeAttrString)
+    attrString.append(appendeeAttrString)
     return attrString
 }

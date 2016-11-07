@@ -9,8 +9,8 @@
 import Foundation
 
 // from http://stackoverflow.com/questions/33795654/find-first-element-matching-condition-in-swift-array-e-g-eksource
-public extension SequenceType {
-    public func find(@noescape predicate: (Self.Generator.Element) throws -> Bool) rethrows -> Self.Generator.Element? {
+public extension Sequence {
+    public func find(predicate: (Self.Iterator.Element) throws -> Bool) rethrows -> Self.Iterator.Element? {
         for element in self {
             if try predicate(element) {
                 return element

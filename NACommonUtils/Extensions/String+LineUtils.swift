@@ -17,7 +17,7 @@ extension String {
      - Returns: Number of newlines in a string
      */
     public func lineCount() -> Int {
-        return componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet()).count - 1
+        return components(separatedBy: CharacterSet.newlines).count - 1
     }
     
     /**
@@ -30,8 +30,8 @@ extension String {
             return false
         }
         
-        let trimmedString = stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        let components = trimmedString.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
+        let trimmedString = trimmingCharacters(in: CharacterSet.whitespaces)
+        let components = trimmedString.components(separatedBy: CharacterSet.newlines)
         guard let firstString = components.first else {
             return false
         }
@@ -48,8 +48,8 @@ extension String {
             return false
         }
         
-        let trimmedString = stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        let components = trimmedString.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
+        let trimmedString = trimmingCharacters(in: CharacterSet.whitespaces)
+        let components = trimmedString.components(separatedBy: CharacterSet.newlines)
         guard let lastString = components.last else {
             return false
         }

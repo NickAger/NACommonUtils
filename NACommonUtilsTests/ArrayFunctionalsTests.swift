@@ -39,7 +39,7 @@ class ArrayFunctionalTests: XCTestCase {
     
     func testArrayByAppend() {
         let x = [1,2,3]
-        let y = x.arrayByAppend(10)
+        let y = x.arrayByAppend(newElement: 10)
         
         XCTAssert(y.count == 4)
         XCTAssert(y.last == 10)
@@ -47,7 +47,7 @@ class ArrayFunctionalTests: XCTestCase {
     
     func testArrayByAppendEmpty() {
         let x = [Int]()
-        let y = x.arrayByAppend(10)
+        let y = x.arrayByAppend(newElement: 10)
         
         XCTAssert(y.count == 1)
         XCTAssert(y.last == 10)
@@ -55,7 +55,7 @@ class ArrayFunctionalTests: XCTestCase {
     
     func testArrayByAppendContentsOf() {
         let x = [1,2,3]
-        let y = x.arrayByAppendContentsOf([5,6,7,8])
+        let y = x.arrayByAppendContentsOf(newElements: [5,6,7,8])
         
         XCTAssert(y.count == 7)
         XCTAssert(y.last == 8)
@@ -63,7 +63,7 @@ class ArrayFunctionalTests: XCTestCase {
     
     func testArrayByAppendContentsOfEmpty() {
         let x = [Int]()
-        let y = x.arrayByAppendContentsOf([5,6,7,8])
+        let y = x.arrayByAppendContentsOf(newElements: [5,6,7,8])
         
         XCTAssert(y.count == 4)
         XCTAssert(y.last == 8)
@@ -71,7 +71,7 @@ class ArrayFunctionalTests: XCTestCase {
     
     func testArrayByAppendContentsOfEmpty2() {
         let x = [1,2,5]
-        let y = x.arrayByAppendContentsOf([])
+        let y = x.arrayByAppendContentsOf(newElements: [])
         
         XCTAssert(y.count == 3)
         XCTAssert(y.last == 5)
@@ -79,7 +79,7 @@ class ArrayFunctionalTests: XCTestCase {
     
     func testArrayByAppendContentsOfEmpty3() {
         let x = [Int]()
-        let y = x.arrayByAppendContentsOf([])
+        let y = x.arrayByAppendContentsOf(newElements: [])
         
         XCTAssert(y.count == 0)
         XCTAssert(y.last == nil)
