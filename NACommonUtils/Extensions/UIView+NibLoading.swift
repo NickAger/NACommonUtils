@@ -27,7 +27,7 @@ public extension UIView {
     // http://stackoverflow.com/questions/33200035/return-instancetype-in-swift
     private static func instanceFromNibHelper<T>() -> T? {
         let viewTypeName = String(describing: self)
-        let elements = Bundle.main.loadNibNamed(viewTypeName, owner: nil, options: nil)
+        let elements = Bundle.main.loadNibNamed(viewTypeName, owner: nil)
         
         var view : T? = nil
         if let index = elements?.index(where: { $0 is T }) {
