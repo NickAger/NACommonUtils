@@ -10,9 +10,9 @@
 import UIKit
 
 extension UIView {
-    public func addBorder(color: UIColor = UIColor.lightGray) {
+    public func addBorder(color: UIColor = UIColor.lightGray, width: CGFloat =  1.0 / UIScreen.main.scale) {
         layer.borderColor = color.cgColor
-        layer.borderWidth = 1.0 / UIScreen.main.scale
+        layer.borderWidth = width
     }
     
     public func addRoundedBorder(color: UIColor = UIColor.lightGray) {
