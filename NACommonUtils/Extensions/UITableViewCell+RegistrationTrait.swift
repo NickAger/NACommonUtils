@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol UITableViewCellRegistrationTrait {
+public protocol UITableViewCellRegistrationTrait {
     static var reuseIdentifier: String {
         get
     }
@@ -17,7 +17,7 @@ protocol UITableViewCellRegistrationTrait {
     static func dequeue<TVC: UITableViewCell>(tableView: UITableView, for indexPath: IndexPath) -> TVC
 }
 
-extension UITableViewCellRegistrationTrait {
+public extension UITableViewCellRegistrationTrait {
     static func register(tableView: UITableView, withNibName nibName: String) {
         let nib = UINib(nibName: nibName, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: reuseIdentifier)

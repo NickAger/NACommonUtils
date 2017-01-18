@@ -8,22 +8,22 @@
 
 import UIKit
 
-protocol HideEmptyCellsTrait {
+public protocol HideEmptyCellsTrait {
     func hideEmptyCells(forTableView tableView: UITableView)
 }
 
-extension HideEmptyCellsTrait {
+public extension HideEmptyCellsTrait {
     func hideEmptyCells(forTableView tableView: UITableView) {
         // http://stackoverflow.com/questions/28708574/how-to-remove-extra-empty-cells-in-tableviewcontroller-ios-swift
         tableView.tableFooterView = UIView()
     }
 }
 
-protocol ResizableCellsTrait {
+public protocol ResizableCellsTrait {
     func enableResizeableCells(forTableView tableView: UITableView)
 }
 
-extension ResizableCellsTrait {
+public extension ResizableCellsTrait {
     func enableResizeableCells(forTableView tableView: UITableView) {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
