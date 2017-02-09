@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NACommonUtils"
-  s.version      = "2.0.3"
+  s.version      = "2.0.4"
   s.summary      = "Some useful utilities."
   s.homepage     = "http://nickager.com/blog/2016/03/04/NACommonUtils"
   s.requires_arc = true
@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
                      * UIView+NibLoading - instanceFromNib() Load an instance of a view from a nib named identically to the class.
                      * UIStoryboard+InstantiateViewController - type-safe Storyboard view controller instantiation
                      * UIView+border - layer based UIView border util
+                     * UILabel+Measurement - text size measurement
                     DESC
 
   s.license      = { :type => "MIT", :file => "LICENSE" }

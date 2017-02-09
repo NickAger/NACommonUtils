@@ -23,6 +23,7 @@ Swift utilities and extensions used across a number of iOS apps
 |UIView+Autolayout|Autolayout helpers; `useAutolayout()`, `centerInView(..)`, `constrainToWidth(..)`, `constrainToHeight(..) `|
 |KeepInMemoryMixin|Class mixin to allow the class to keep itself in memory|
 |UIView+NibLoading|`instanceFromNib()` Load an instance of a view from a nib named identically to the class.|
+|UILabel+Measurement|text size measurement|
 
 ## Installation
 

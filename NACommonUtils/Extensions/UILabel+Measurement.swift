@@ -9,10 +9,11 @@
 import UIKit
 
 public extension UILabel {
-    public class func size(withText text: String, forWidth width: CGFloat) -> CGSize {
+    public class func size(withText text: String, forWidth width: CGFloat, font: UIFont = UIFont.systemFont(ofSize: UIFont.labelFontSize)) -> CGSize {
         let measurementLabel = UILabel()
         measurementLabel.text = text
         measurementLabel.numberOfLines = 0
+        measurementLabel.font = font
         measurementLabel.lineBreakMode = .byWordWrapping
         measurementLabel.translatesAutoresizingMaskIntoConstraints = false
         measurementLabel.widthAnchor.constraint(equalToConstant: width).isActive = true
