@@ -4,9 +4,10 @@
 
 language: objective-c  # even-though its a swift project, if I don't say objective-c I end up with old xcode environment
 osx_image: xcode8.2
-xcode_project:  NACommonUtils.xcodeproj
-xcode_scheme: NACommonUtils
+#xcode_project:  NACommonUtils.xcodeproj
+#xcode_scheme: NACommonUtils
 
+script: xcodebuild clean && xcodebuild build -project NACommonUtils.xcodeproj -scheme NACommonUtils
 #cache: cocoapods
 ##podfile: Example/Podfile
 
