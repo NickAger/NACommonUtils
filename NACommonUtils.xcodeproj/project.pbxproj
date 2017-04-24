@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		841A54B31D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A54B21D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift */; };
 		841A54B51D09C218006E6272 /* NACommonUtils.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 841A54B41D09C218006E6272 /* NACommonUtils.podspec */; };
-		841A54B71D09C256006E6272 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 841A54B61D09C256006E6272 /* README.md */; };
 		8442E8661DD0E131003B0C75 /* UILabel+Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E8651DD0E131003B0C75 /* UILabel+Measurement.swift */; };
 		8442E8681DD0E140003B0C75 /* KeepInMemoryTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E8671DD0E140003B0C75 /* KeepInMemoryTrait.swift */; };
 		8442E86B1DD0E155003B0C75 /* UITableViewCell+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442E8691DD0E155003B0C75 /* UITableViewCell+Helpers.swift */; };
@@ -225,7 +224,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "RocketBox Ltd";
 				TargetAttributes = {
 					848ED41D1C8DD42D00EC5B59 = {
@@ -292,7 +291,6 @@
 				848ED4441C8DDD3800EC5B59 /* NSMutableAttributedString+Creation.swift in Sources */,
 				8442E8681DD0E140003B0C75 /* KeepInMemoryTrait.swift in Sources */,
 				848ED4461C8DDD3800EC5B59 /* UIButton+ActionBlock.swift in Sources */,
-				841A54B71D09C256006E6272 /* README.md in Sources */,
 				841A54B31D09C0C9006E6272 /* UIGestureRecognizer+ActionBlock.swift in Sources */,
 				848ED4471C8DDD3800EC5B59 /* UIResponder+FindUIViewController.swift in Sources */,
 				8442E86B1DD0E155003B0C75 /* UITableViewCell+Helpers.swift in Sources */,
@@ -334,8 +332,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -382,8 +382,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -403,6 +405,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -413,6 +416,7 @@
 		848ED4331C8DD42D00EC5B59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -430,6 +434,7 @@
 		848ED4341C8DD42D00EC5B59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
