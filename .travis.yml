@@ -4,17 +4,20 @@
 
 language: objective-c  # even-though its a swift project, if I don't say objective-c I end up with old xcode environment
 osx_image: xcode8.2
-cache: cocoapods
-#podfile: Example/Podfile
+xcode_project:  NACommonUtils.xcodeproj
+xcode_scheme: NACommonUtils
 
-before_install:
-- rvm install 2.1.5
-- gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
-script:
-# - xcrun simctl list
-- set -o pipefail && xcodebuild test -project NACommonUtils.xcodeproj -scheme NACommonUtils  -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'  -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
-- pod lib lint
+#cache: cocoapods
+##podfile: Example/Podfile
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+#before_install:
+#- rvm install 2.1.5
+#- gem install cocoapods # Since Travis is not always on latest version
+## - pod install --project-directory=Example
+#script:
+## - xcrun simctl list
+#- set -o pipefail && xcodebuild test -project NACommonUtils.xcodeproj -scheme NACommonUtils  -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'  -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+#- pod lib lint
+
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash)
