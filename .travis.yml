@@ -1,24 +1,7 @@
 # references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
+# * http://stackoverflow.com/questions/41786984/error-unexpected-action-build-when-building-a-project-with-swift-3-and-cocoa
 
 language: objective-c  # even-though its a swift project, if I don't say objective-c I end up with old xcode environment
 osx_image: xcode8.3
-#xcode_project:  NACommonUtils.xcodeproj
-#xcode_scheme: NACommonUtils
 
 script: xcodebuild clean && xcodebuild build -project NACommonUtils.xcodeproj -scheme NACommonUtils
-#cache: cocoapods
-##podfile: Example/Podfile
-
-#before_install:
-#- rvm install 2.1.5
-#- gem install cocoapods # Since Travis is not always on latest version
-## - pod install --project-directory=Example
-#script:
-## - xcrun simctl list
-#- set -o pipefail && xcodebuild test -project NACommonUtils.xcodeproj -scheme NACommonUtils  -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'  -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
-#- pod lib lint
-
-#after_success:
-#  - bash <(curl -s https://codecov.io/bash)
