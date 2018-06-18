@@ -2,6 +2,6 @@
 # * http://stackoverflow.com/questions/41786984/error-unexpected-action-build-when-building-a-project-with-swift-3-and-cocoa
 
 language: objective-c  # even-though its a swift project, if I don't say objective-c I end up with old xcode environment
-osx_image: xcode9
+osx_image: xcode9.4
 
 script: xcodebuild clean && xcodebuild build -project NACommonUtils.xcodeproj -scheme NACommonUtils
