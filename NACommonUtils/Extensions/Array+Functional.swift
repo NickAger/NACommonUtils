@@ -62,7 +62,7 @@ extension Array {
         let indexes =  0...(count)
         let zipped = zip(self, indexes)
         
-        return zipped.flatMap { pair in
+        return zipped.compactMap { pair in
             let index = pair.1
             if index % 2 == 0 {
                 return pair.0
@@ -81,7 +81,7 @@ extension Array {
         let indexes =  0...(count)
         let zipped = zip(self, indexes)
         
-        return zipped.flatMap { pair in
+        return zipped.compactMap { pair in
             let index = pair.1
             if index % 2 != 0 {
                 return pair.0
