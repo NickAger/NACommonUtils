@@ -49,7 +49,7 @@ private func addContraints(to activityOverlay: UIView, superview: UIView) {
 }
 
 private func createActivityIndicator() -> UIView {
-    let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+    let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
     activityIndicator.startAnimating()
     activityIndicator.useAutolayout()
     return activityIndicator

@@ -21,7 +21,7 @@ public extension UILabel {
         measurementLabel.lineBreakMode = .byWordWrapping
         measurementLabel.translatesAutoresizingMaskIntoConstraints = false
         measurementLabel.widthAnchor.constraint(equalToConstant: width).isActive = true
-        let size = measurementLabel.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+        let size = measurementLabel.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
         return size
     }
     
@@ -36,7 +36,7 @@ public extension UILabel {
         measurementLabel.lineBreakMode = .byWordWrapping
         measurementLabel.translatesAutoresizingMaskIntoConstraints = false
         measurementLabel.widthAnchor.constraint(equalToConstant: width).isActive = true
-        let size = measurementLabel.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+        let size = measurementLabel.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
         return size
     }
     

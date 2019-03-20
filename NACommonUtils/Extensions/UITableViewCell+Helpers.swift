@@ -27,7 +27,7 @@ public protocol ResizableCellsTrait {
 
 public extension ResizableCellsTrait {
     func enableResizeableCells(forTableView tableView: UITableView) {
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 44
     }
 }
@@ -38,6 +38,6 @@ public func hideEmptyCells(forTableView tableView: UITableView) {
 }
 
 public func enableResizeableCells(forTableView tableView: UITableView) {
-    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.rowHeight = UITableView.automaticDimension
     tableView.estimatedRowHeight = 44
 }
