@@ -18,6 +18,12 @@ public protocol UITableViewCellRegistrationTrait {
 }
 
 public extension UITableViewCellRegistrationTrait {
+    static var reuseIdentifier: String {
+        get {
+            return String(describing:Self.self)
+        }
+    }
+    
     static func register(tableView: UITableView, withNibName nibName: String) {
         let nib = UINib(nibName: nibName, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: reuseIdentifier)
