@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NACommonUtils"
-  s.version      = "2.5.0"
+  s.version      = "2.6.0"
   s.summary      = "Some useful utilities."
   s.homepage     = "http://nickager.com/blog/2016/03/04/NACommonUtils"
   s.requires_arc = true
