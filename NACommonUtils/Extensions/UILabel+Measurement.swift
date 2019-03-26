@@ -13,7 +13,7 @@ public extension UILabel {
      Measure the height of a multi-line label given a specific width for non-attributed
      text
      */
-    public class func size(withText text: String, forWidth width: CGFloat, font: UIFont = UIFont.systemFont(ofSize: UIFont.labelFontSize)) -> CGSize {
+    class func size(withText text: String, forWidth width: CGFloat, font: UIFont = UIFont.systemFont(ofSize: UIFont.labelFontSize)) -> CGSize {
         let measurementLabel = UILabel()
         measurementLabel.text = text
         measurementLabel.numberOfLines = 0
@@ -29,7 +29,7 @@ public extension UILabel {
      Measure the height of a multi-line label given a specific width for attributed
      text
      */
-    public class func size(withAttributedText attributedText: NSAttributedString, forWidth width: CGFloat) -> CGSize {
+    class func size(withAttributedText attributedText: NSAttributedString, forWidth width: CGFloat) -> CGSize {
         let measurementLabel = UILabel()
         measurementLabel.attributedText = attributedText
         measurementLabel.numberOfLines = 0
@@ -43,7 +43,7 @@ public extension UILabel {
     /**
      Measure the size of some text
      */
-    public class func measure(text: String, font: UIFont = UIFont.systemFont(ofSize: UIFont.labelFontSize)) -> CGSize {
+    class func measure(text: String, font: UIFont = UIFont.systemFont(ofSize: UIFont.labelFontSize)) -> CGSize {
         let measurementLabel = UILabel()
         measurementLabel.text = text
         measurementLabel.font = font

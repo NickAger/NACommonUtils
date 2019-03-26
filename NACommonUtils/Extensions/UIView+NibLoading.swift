@@ -19,7 +19,7 @@ public extension UIView {
      
      - Returns: An optional instance of the view class`
      */
-    public static func instanceFromNib() -> Self? {
+    static func instanceFromNib() -> Self? {
         return instanceFromNibHelper()
     }
     
