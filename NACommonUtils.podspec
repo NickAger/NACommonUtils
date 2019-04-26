@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NACommonUtils"
-  s.version      = "2.6.1"
+  s.version      = "2.7.0"
   s.summary      = "Some useful utilities."
   s.homepage     = "http://nickager.com/blog/2016/03/04/NACommonUtils"
   s.requires_arc = true
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "12.0"
   s.ios.deployment_target = '12.0'
-  s.swift_versions = ['4.2']
+  s.swift_versions = ['5.0']
   s.source       = { :git => "https://github.com/NickAger/NACommonUtils.git", :tag => "#{s.version}" }
   s.source_files = "NACommonUtils/**/*.{swift}"
 

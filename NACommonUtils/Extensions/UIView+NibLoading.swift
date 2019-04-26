@@ -30,7 +30,7 @@ public extension UIView {
         let elements = Bundle.main.loadNibNamed(viewTypeName, owner: nil)
         
         var view : T? = nil
-        if let index = elements?.index(where: { $0 is T }) {
+        if let index = elements?.firstIndex(where: { $0 is T }) {
             view = (elements?[index]) as? T
         }
         return view
