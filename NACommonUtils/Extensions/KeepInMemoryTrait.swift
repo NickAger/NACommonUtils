@@ -17,7 +17,7 @@ import Foundation
  property `var keepInMemory: <type>?`
  
  */
-public protocol KeepInMemoryTrait : class {
+public protocol KeepInMemoryTrait : AnyObject {
     var keepInMemory : Self? {get set}
     func keepOurselvesInMemory()
     func freeOurselvesFromMemory()
